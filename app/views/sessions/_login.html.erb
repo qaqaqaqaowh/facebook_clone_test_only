@@ -1,0 +1,9 @@
+<%= form_for :session, url: sessions_path, method: :post do |u| %>
+<%= u.label "Email" %>
+<%= u.text_field :email %>
+<%= u.label "Password" %>
+<%= u.password_field :password %>
+<%= u.label "Confirm Password" %>
+<%= u.password_field :password_confirmation %>
+<%= u.submit %>
+<% end %>

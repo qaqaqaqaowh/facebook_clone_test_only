@@ -1,0 +1,6 @@
+<%= form_for @user do |u| %>
+<%= u.text_field :email, placeholder:"Email" %>
+<%= u.text_field :name, placeholder:"Name" %>
+<%= u.password_field :password, placeholder:"Password", value: nil %>
+<%= u.password_field :password_confirmation, placeholder:"Confirmation", value: nil %>
+<%= u.submit %>
