@@ -10,7 +10,7 @@ RSpec.describe LikesController, type: :controller do
 
       before do
         session[:user_id] = user.id
-        post :create, :like=> {status: status, user: user}
+        post :create, :like=> {status_id: status, user_id: user}
       end
 
       it "status likes will increase by 1" do
